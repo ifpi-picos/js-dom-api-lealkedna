@@ -5,25 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="  https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <title>Books API </title>
 </head>
 <body>
     <header>
-    <h1> <i> Buscador de Livros</i></h1>
-    <ul>
-    <li> <a href = "index.html"> Home </a> </li>
-    <li> <a href = "busca.html">Busca</a></li>
-    <form>
-        <input id= "procura" placeholder="Pesquisa" type="text" >
-        <button id="pesquisa" type="button">Pesquisar</button>   
-    </form>
-    </li>
-    </ul>
+    <h1> Buscador de Livros</h1>
+    <div class="nav">
+        <ul >
+            <li> <a href = "index.html"> Home </a> </li>
+            <li> <a href = "busca.html">Busca</a></li>
+        </ul>
+        <button class="btn-add" id='butaoAdicionar'>Adicionar no acervo</button>
+    </div>
     </header>
     <main>
-        <ul id="livros"></ul>
-        <button id='butaoAdicionar'>adicionar no acervo</button>
-    <section> 
+
+        <form class="form-pesquisa">
+            <input class="campo" id= "procura" placeholder="Pesquisa" type="text" >
+            <button class="btn" id="pesquisa" type="button"><i class="fa-solid fa-magnifying-glass" style="color: #FFD43B;"></i></button>   
+        </form>
+        <div class="exibe">
+            <ol class="informacoes" id="livros"></ol>
+        </div>
+        
+       
+    <section class="footer"> 
           <p> <i>" Ler fornece ao espírito materiais para o conhecimento, 
               mas só o pensar faz nosso o que lemos" </i>  ( Jonh Lock)
             </p>

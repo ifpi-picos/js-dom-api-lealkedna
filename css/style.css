@@ -5,5 +5,132 @@
 }
 
 body{
-    background: rgb(134, 184, 100);
+    height: 100vh;
+    font-family: monospace;
+}
+
+h1{
+    text-align: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap:  8rem;
+    margin-top: 2%;
+    font-size: 16px;
+}
+.nav ul{
+    display: flex;
+    list-style: none;
+    gap:  8rem;
+}
+.nav ul li a{
+    text-decoration: none; 
+}
+.btn-add {
+    background: transparent; 
+    border:  2px solid green;
+    color: green;
+    margin-right: 10px;   
+}
+.form-pesquisa{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5%;
+    gap: 1em;
+}
+
+.campo{
+    width: 30%;
+    padding: 1em;
+    border-radius: 25em;
+    border: 2px solid rgb(245, 245, 163);
+}
+
+
+.btn{
+    font-size: 26px;
+    background: transparent;
+    border: none;
+    
+}
+.exibe{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.informacoes ul{
+    gap: 8%;
+    list-style: georgian;
+   
+}
+.informacoes{
+    width: 50%;
+}
+
+.removeBtn{
+    color: brown;
+}
+.addBtn {
+    color: green;
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid grey;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .form-pesquisa {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .campo {
+        width: 60%; 
+    }
+
+    .informacoes {
+        width: 80%; 
+        margin: 10%;
+    }
+
+    .footer{
+       /* position: absolute;
+        bottom: 0;*/
+        margin-top: 20%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-pesquisa {
+        flex-direction: column;
+        align-items: center;
+    }
+    .campo {
+        width: 70%; 
+    }
+    .informacoes {
+        width: 90%; 
+        margin: 10%;
+    }
+    .footer{
+       /*position: absolute;
+       bottom: 0;*/
+        margin-top: 20%;
+    }
 }
